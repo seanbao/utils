@@ -2,7 +2,7 @@ from urllib.request import urlopen
 import json
 import subprocess, shlex
 
-url = urlopen("http://10.1.1.243/api/v4/groups/pet-medical/projects?private_token=PRIVATE_TOKEN&per_page=1000")
+url = urlopen("http://IP/api/v4/groups/pet-medical/projects?private_token=PRIVATE_TOKEN&per_page=1000")
 allProjects = json.loads(url.read().decode())
 for project in allProjects: 
     try:
